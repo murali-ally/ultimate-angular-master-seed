@@ -1,0 +1,11 @@
+<div>
+  <auth-form
+    user="$ctrl.user"
+    on-submit="$ctrl.onSubmit($event)"
+    button-text="{{ $ctrl.buttonText }}"
+    error-message="{{ $ctrl.errorMessage }}"
+    form-title="{{ $ctrl.formTitle }}"
+  ></auth-form>
+  <div>{{ $ctrl.successMessage }}</div>
+  <a ui-sref="auth.register">If you don't have an account, register here</a>
+</div>
